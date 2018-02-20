@@ -1,0 +1,272 @@
+SUBDUE 5.2.2
+
+Parameters:
+  Input file..................... ../../Work/benzeneBigTest.g
+  Predefined substructure file... none
+  Output file.................... none
+  Beam width..................... 4
+  Compress....................... false
+  Evaluation method.............. MDL
+  'e' edges directed............. true
+  Incremental.................... false
+  Iterations..................... 1
+  Limit.......................... 42
+  Minimum size of substructures.. 1
+  Maximum size of substructures.. 84
+  Number of best substructures... 3
+  Output level................... 2
+  Allow overlapping instances.... false
+  Prune.......................... false
+  Threshold...................... 0.000000
+  Value-based queue.............. false
+  Recursion...................... false
+
+Read 7 total positive graphs
+Read 36 total negative graphs
+
+7 positive graphs: 84 vertices, 84 edges, 1086 bits
+36 negative graphs: 432 vertices, 426 edges, 6521 bits
+4 unique labels
+
+2 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 15.1152, pos instances = 7, neg instances = 6
+  Graph(12v,11e):
+    v 1 c
+    v 2 c
+    v 3 c
+    v 4 c
+    v 5 c
+    v 6 c
+    v 7 h
+    v 8 h
+    v 9 h
+    v 10 h
+    v 11 h
+    v 12 h
+    u 1 2 single_bond
+    u 5 6 single_bond
+    u 2 3 double_bond
+    u 4 5 double_bond
+    u 6 1 double_bond
+    u 1 7 single_bond
+    u 2 8 single_bond
+    u 3 9 single_bond
+    u 4 10 single_bond
+    u 5 11 single_bond
+    u 6 12 single_bond
+
+(2) Substructure: value = 11.5751, pos instances = 7, neg instances = 6
+  Graph(11v,11e):
+    v 1 c
+    v 2 c
+    v 3 c
+    v 4 c
+    v 5 c
+    v 6 c
+    v 7 h
+    v 8 h
+    v 9 h
+    v 10 h
+    v 11 h
+    u 1 2 single_bond
+    u 3 4 single_bond
+    u 5 6 single_bond
+    u 2 3 double_bond
+    u 4 5 double_bond
+    u 6 1 double_bond
+    u 1 7 single_bond
+    u 2 8 single_bond
+    u 3 9 single_bond
+    u 4 10 single_bond
+    u 6 11 single_bond
+
+(3) Substructure: value = 10.6993, pos instances = 42, neg instances = 196
+  Graph(1v,0e):
+    v 1 h
+
+
+SUBDUE done (elapsed CPU time =    0.03 seconds).
+SUBDUE 5.2.2
+
+Parameters:
+  Input file..................... ../../Work/benzeneBigTest.g
+  Predefined substructure file... none
+  Output file.................... none
+  Beam width..................... 4
+  Compress....................... false
+  Evaluation method.............. MDL
+  'e' edges directed............. true
+  Incremental.................... false
+  Iterations..................... 1
+  Limit.......................... 42
+  Minimum size of substructures.. 1
+  Maximum size of substructures.. 84
+  Number of best substructures... 3
+  Output level................... 2
+  Allow overlapping instances.... false
+  Prune.......................... false
+  Threshold...................... 0.000000
+  Value-based queue.............. false
+  Recursion...................... false
+
+Read 7 total positive graphs
+Read 38 total negative graphs
+
+7 positive graphs: 84 vertices, 84 edges, 1086 bits
+38 negative graphs: 455 vertices, 448 edges, 6894 bits
+4 unique labels
+
+2 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 17.3618, pos instances = 7, neg instances = 6
+  Graph(12v,11e):
+    v 1 c
+    v 2 c
+    v 3 c
+    v 4 c
+    v 5 c
+    v 6 c
+    v 7 h
+    v 8 h
+    v 9 h
+    v 10 h
+    v 11 h
+    v 12 h
+    u 1 2 single_bond
+    u 3 4 single_bond
+    u 5 6 single_bond
+    u 4 5 double_bond
+    u 6 1 double_bond
+    u 1 7 single_bond
+    u 2 8 single_bond
+    u 3 9 single_bond
+    u 4 10 single_bond
+    u 5 11 single_bond
+    u 6 12 single_bond
+
+(2) Substructure: value = 11.6103, pos instances = 42, neg instances = 207
+  Graph(1v,0e):
+    v 1 h
+
+(3) Substructure: value = 10.159, pos instances = 7, neg instances = 8
+  Graph(11v,10e):
+    v 1 c
+    v 2 c
+    v 3 c
+    v 4 c
+    v 5 c
+    v 6 c
+    v 7 h
+    v 8 h
+    v 9 h
+    v 10 h
+    v 11 h
+    u 1 2 single_bond
+    u 3 4 single_bond
+    u 5 6 single_bond
+    u 4 5 double_bond
+    u 6 1 double_bond
+    u 1 7 single_bond
+    u 2 8 single_bond
+    u 3 9 single_bond
+    u 4 10 single_bond
+    u 5 11 single_bond
+
+
+SUBDUE done (elapsed CPU time =    0.08 seconds).
+SUBDUE 5.2.2
+
+Parameters:
+  Input file..................... ../../Work/benzeneBigTest.g
+  Predefined substructure file... none
+  Output file.................... none
+  Beam width..................... 4
+  Compress....................... false
+  Evaluation method.............. MDL
+  'e' edges directed............. true
+  Incremental.................... false
+  Iterations..................... 1
+  Limit.......................... 42
+  Minimum size of substructures.. 1
+  Maximum size of substructures.. 84
+  Number of best substructures... 3
+  Output level................... 2
+  Allow overlapping instances.... false
+  Prune.......................... false
+  Threshold...................... 0.000000
+  Value-based queue.............. false
+  Recursion...................... false
+
+Read 7 total positive graphs
+Read 40 total negative graphs
+
+7 positive graphs: 84 vertices, 84 edges, 1086 bits
+40 negative graphs: 478 vertices, 468 edges, 7246 bits
+4 unique labels
+
+2 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 13.4052, pos instances = 7, neg instances = 7
+  Graph(12v,11e):
+    v 1 c
+    v 2 c
+    v 3 c
+    v 4 c
+    v 5 c
+    v 6 c
+    v 7 h
+    v 8 h
+    v 9 h
+    v 10 h
+    v 11 h
+    v 12 h
+    u 3 4 single_bond
+    u 5 6 single_bond
+    u 2 3 double_bond
+    u 4 5 double_bond
+    u 6 1 double_bond
+    u 1 7 single_bond
+    u 2 8 single_bond
+    u 3 9 single_bond
+    u 4 10 single_bond
+    u 5 11 single_bond
+    u 6 12 single_bond
+
+(2) Substructure: value = 12.5231, pos instances = 42, neg instances = 218
+  Graph(1v,0e):
+    v 1 h
+
+(3) Substructure: value = 10.6348, pos instances = 7, neg instances = 7
+  Graph(11v,11e):
+    v 1 c
+    v 2 c
+    v 3 c
+    v 4 c
+    v 5 c
+    v 6 c
+    v 7 h
+    v 8 h
+    v 9 h
+    v 10 h
+    v 11 h
+    u 1 2 single_bond
+    u 3 4 single_bond
+    u 5 6 single_bond
+    u 2 3 double_bond
+    u 4 5 double_bond
+    u 6 1 double_bond
+    u 1 7 single_bond
+    u 2 8 single_bond
+    u 3 9 single_bond
+    u 5 10 single_bond
+    u 6 11 single_bond
+
+
+SUBDUE done (elapsed CPU time =    0.08 seconds).

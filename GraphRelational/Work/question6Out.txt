@@ -1,0 +1,118 @@
+SUBDUE 5.2.2
+
+Parameters:
+  Input file..................... atom_bond_subdue2.g
+  Predefined substructure file... none
+  Output file.................... none
+  Beam width..................... 4
+  Compress....................... false
+  Evaluation method.............. setcover
+  'e' edges directed............. true
+  Incremental.................... false
+  Iterations..................... 1
+  Limit.......................... 100
+  Minimum size of substructures.. 1
+  Maximum size of substructures.. 20144
+  Number of best substructures... 3
+  Output level................... 2
+  Allow overlapping instances.... false
+  Prune.......................... false
+  Threshold...................... 0.000000
+  Value-based queue.............. false
+  Recursion...................... false
+
+Read 138 total positive graphs
+Read 92 total negative graphs
+
+138 positive graphs: 20144 vertices, 20471 edges
+92 negative graphs: 10156 vertices, 10244 edges
+56 unique labels
+
+40 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.726087, pos instances = 166, neg instances = 43
+  Graph(12v,11e):
+    v 1 atom
+    v 2 c
+    v 3 atom
+    v 4 22
+    v 5 atom
+    v 6 bond
+    v 7 7
+    v 8 bond
+    v 9 7
+    v 10 bond
+    v 11 bond
+    v 12 bond
+    u 1 2 element
+    u 3 4 atom_type
+    u 6 7 bond_type
+    u 6 1 connect
+    u 8 9 bond_type
+    u 8 1 connect
+    u 8 3 connect
+    u 10 5 connect
+    u 11 5 connect
+    u 12 5 connect
+    u 12 1 connect
+
+(2) Substructure: value = 0.726087, pos instances = 166, neg instances = 43
+  Graph(13v,12e):
+    v 1 atom
+    v 2 c
+    v 3 atom
+    v 4 c
+    v 5 22
+    v 6 atom
+    v 7 bond
+    v 8 7
+    v 9 bond
+    v 10 7
+    v 11 bond
+    v 12 bond
+    v 13 bond
+    u 1 2 element
+    u 3 4 element
+    u 3 5 atom_type
+    u 7 8 bond_type
+    u 7 1 connect
+    u 9 10 bond_type
+    u 9 1 connect
+    u 9 3 connect
+    u 11 6 connect
+    u 12 6 connect
+    u 13 6 connect
+    u 13 1 connect
+
+(3) Substructure: value = 0.726087, pos instances = 166, neg instances = 43
+  Graph(13v,12e):
+    v 1 atom
+    v 2 c
+    v 3 atom
+    v 4 22
+    v 5 atom
+    v 6 bond
+    v 7 7
+    v 8 bond
+    v 9 7
+    v 10 bond
+    v 11 bond
+    v 12 bond
+    v 13 bond
+    u 1 2 element
+    u 3 4 atom_type
+    u 6 7 bond_type
+    u 6 1 connect
+    u 8 9 bond_type
+    u 8 1 connect
+    u 8 3 connect
+    u 10 3 connect
+    u 11 5 connect
+    u 12 5 connect
+    u 13 5 connect
+    u 13 1 connect
+
+
+SUBDUE done (elapsed CPU time =   45.10 seconds).

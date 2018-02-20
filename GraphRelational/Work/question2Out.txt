@@ -1,0 +1,77 @@
+SUBDUE 5.2.2
+
+Parameters:
+  Input file..................... ../../Work/question2In.g
+  Predefined substructure file... none
+  Output file.................... none
+  Beam width..................... 4
+  Compress....................... false
+  Evaluation method.............. MDL
+  'e' edges directed............. true
+  Incremental.................... false
+  Iterations..................... 1
+  Limit.......................... 9
+  Minimum size of substructures.. 1
+  Maximum size of substructures.. 18
+  Number of best substructures... 3
+  Output level................... 2
+  Allow overlapping instances.... false
+  Prune.......................... false
+  Threshold...................... 0.000000
+  Value-based queue.............. false
+  Recursion...................... false
+
+Read 3 total positive graphs
+
+3 positive graphs: 18 vertices, 18 edges, 181 bits
+3 unique labels
+
+1 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 2.99275, pos instances = 3, neg instances = 0
+  Graph(6v,6e):
+    v 1 c
+    v 2 c
+    v 3 c
+    v 4 c
+    v 5 c
+    v 6 c
+    u 1 3 single_bond
+    u 2 4 single_bond
+    u 5 6 single_bond
+    u 1 2 double_bond
+    u 3 5 double_bond
+    u 4 6 double_bond
+
+(2) Substructure: value = 2.1115, pos instances = 3, neg instances = 0
+  Graph(6v,5e):
+    v 1 c
+    v 2 c
+    v 3 c
+    v 4 c
+    v 5 c
+    v 6 c
+    u 2 4 single_bond
+    u 5 6 single_bond
+    u 1 2 double_bond
+    u 3 5 double_bond
+    u 4 6 double_bond
+
+(3) Substructure: value = 2.1115, pos instances = 3, neg instances = 0
+  Graph(6v,5e):
+    v 1 c
+    v 2 c
+    v 3 c
+    v 4 c
+    v 5 c
+    v 6 c
+    u 1 3 single_bond
+    u 2 4 single_bond
+    u 5 6 single_bond
+    u 3 5 double_bond
+    u 4 6 double_bond
+
+
+SUBDUE done (elapsed CPU time =    0.01 seconds).
