@@ -1,0 +1,5 @@
+to build the program, a makefile is provided.
+make
+
+usage:
+./mat_mul.exe [matrix size] [thread count]

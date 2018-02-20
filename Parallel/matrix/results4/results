@@ -1,0 +1,90 @@
+threads:1
+size:1000
+time: 3.529106
+threads:1
+size:2000
+time: 26.910761
+threads:1
+size:5000
+time: 400.175827
+threads:1
+size:7000
+time: 1043.260569
+threads:1
+size:10000
+time: 3066.463547
+threads:2
+size:1000
+time: 1.859286
+threads:2
+size:2000
+time: 13.650663
+threads:2
+size:5000
+time: 207.603187
+threads:2
+size:7000
+time: 562.771277
+threads:2
+size:10000
+time: 1631.603421
+threads:4
+size:1000
+time: 1.096378
+threads:4
+size:2000
+time: 7.012327
+threads:4
+size:5000
+time: 106.984401
+threads:4
+size:7000
+time: 287.871055
+threads:4
+size:10000
+time: 804.361406
+threads:8
+size:1000
+time: 0.606379
+threads:8
+size:2000
+time: 3.768714
+threads:8
+size:5000
+time: 53.526704
+threads:8
+size:7000
+time: 143.408458
+threads:8
+size:10000
+time: 412.093829
+threads:16
+size:1000
+time: 0.382969
+threads:16
+size:2000
+time: 2.155019
+threads:16
+size:5000
+time: 28.417647
+threads:16
+size:7000
+time: 78.232137
+threads:16
+size:10000
+time: 225.571057
+threads:28
+size:1000
+time: 0.321600
+threads:28
+size:2000
+time: 1.430790
+threads:28
+size:5000
+time: 19.144932
+threads:28
+size:7000
+time: 46.966143
+threads:28
+size:10000
+time: 142.200171
