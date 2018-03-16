@@ -1,7 +1,7 @@
 #ifndef MAZE_NODE_H
 #define MAZE_NODE_H
 enum Direction = {NORTH, NORTH-EAST, EAST, SOUTH-EAST, SOUTH, SOUTH-WEST, WEST, NORTH-WEST} 
-class mazeNode {
+class MazeNode {
     public:
         mazeNode();
         ~mazeNode();
