@@ -5,9 +5,6 @@ MazeNode::MazeNode() {
     visited = false;
 }
 
-~MazeNode::MazeNode() {
-}
-
 bool MazeNode::isVisited() {
     return visited;
 }
@@ -28,4 +25,24 @@ bool MazeNode::hasWall(Direction dir) {
 void MazeNode::removeWall(Direction  dir) {
     uint8_t mask = 1 << dir;
     walls &= ~mask;
+}
+
+int MazeNode::getX() {
+    return x;
+}
+
+int MazeNode::getY() {
+    return y;
+}
+
+void MazeNode::setX(int val) {
+    x = val;
+}
+
+void MazeNode::setY(int val) {
+    y = val;
+}
+
+uint8_t MazeNode::getWalls() {
+    return walls;
 }
