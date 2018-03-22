@@ -150,38 +150,39 @@ MazeNode* Maze::getNode(int x, int y) {
 }
 
 void Maze::drawMaze() {
-    //okay so each cell is a 3x3 grid.
-    //draw the center empty if it is visited
-    //draw walls empty if they are broken
-    int draw_w = w*3;
-    int draw_h = h*3;
+    //try to draw it so that walls aren't 2 squares thick.
+    int draw_w = w*2 + 1;
+    int draw_h = h*2 + 1;
     int** draw_pattern = new int*[draw_w];
     for (int i = 0; i < draw_w; i++) {
         draw_pattern[i] = new int[draw_h];
+        for (int j = 0; j < draw_h; j++) {
+            draw_pattern[i][j] = 0;
+        }
     }
-    for (int y = 0; y < h; y++) {
-        for (int x = 0; x < w; x++) {
+    for (int x = 0; x < w; x++) {
+        for (int y = 0; y < h; y++) {
             MazeNode* node = getNode(x, y);
             uint8_t walls = node->getWalls();
-            int pat_x = x*3 + 1;
-            int pat_y = y*3 + 1;
-            //okay draw this cell
-            //put a 0 for no wall
+            int pat_x = x*2 + 1;
+            int pat_y = y*2 + 1;
+
             draw_pattern[pat_x][pat_y] = !node->isVisited();
-            //draw_pattern[pat_x][pat_y] = 1;
-            draw_pattern[pat_x][pat_y-1] = walls & 0x01;
-            draw_pattern[pat_x-1][pat_y-1] = walls & 0x02;
-            draw_pattern[pat_x-1][pat_y] = walls & 0x04;
-            draw_pattern[pat_x-1][pat_y+1] = walls & 0x08;
-            draw_pattern[pat_x][pat_y+1] = walls & 0x10;
-            draw_pattern[pat_x+1][pat_y+1] = walls & 0x20;
-            draw_pattern[pat_x+1][pat_y] = walls & 0x40;
-            draw_pattern[pat_x+1][pat_y-1] = walls & 0x80;
+            //increment, so if either wall is closed it will be drawn closed
+            draw_pattern[pat_x][pat_y-1] += walls & 0x01;
+            draw_pattern[pat_x-1][pat_y-1] += walls & 0x02;
+            draw_pattern[pat_x-1][pat_y] += walls & 0x04;
+            draw_pattern[pat_x-1][pat_y+1] += walls & 0x08;
+            draw_pattern[pat_x][pat_y+1] += walls & 0x10;
+            draw_pattern[pat_x+1][pat_y+1] += walls & 0x20;
+            draw_pattern[pat_x+1][pat_y] += walls & 0x40;
+            draw_pattern[pat_x+1][pat_y-1] += walls & 0x80;
+
         }
     }
     //now draw form the generated pattern
-    for (int y = 0; y < h*3; y++) {
-        for (int x = 0; x < w*3; x++) {
+    for (int y = 0; y < draw_h; y++) {
+        for (int x = 0; x < draw_w; x++) {
             if (draw_pattern[x][y] != 0)
                 printf("#");
             else
@@ -193,4 +194,5 @@ void Maze::drawMaze() {
         delete[] draw_pattern[i];
     }
     delete[] draw_pattern;
+
 }
