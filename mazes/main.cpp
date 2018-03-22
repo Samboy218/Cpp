@@ -87,4 +87,5 @@ int main(int argc, char** argv) {
     my_maze->getNode(0, 0)->removeWall(NORTH);
     my_maze->getNode(w-1, h-1)->removeWall(SOUTH);
     my_maze->drawMaze();
+    my_maze->toFile((char*)"test.out");
 }

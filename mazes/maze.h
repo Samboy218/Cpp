@@ -14,6 +14,7 @@ class Maze {
         bool removeWall(int x1, int y1, int x2, int y2);
         MazeNode* getNode(int x, int y);
         void drawMaze();
+        void toFile(char* filename);
 
     private:
         MazeNode** maze;

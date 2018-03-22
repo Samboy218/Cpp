@@ -196,3 +196,54 @@ void Maze::drawMaze() {
     delete[] draw_pattern;
 
 }
+
+//basically do what the above draw function does, but into a file
+void Maze::toFile(char* filename) {
+    //try to draw it so that walls aren't 2 squares thick.
+    int draw_w = w*2 + 1;
+    int draw_h = h*2 + 1;
+    int** draw_pattern = new int*[draw_w];
+    for (int i = 0; i < draw_w; i++) {
+        draw_pattern[i] = new int[draw_h];
+        for (int j = 0; j < draw_h; j++) {
+            draw_pattern[i][j] = 0;
+        }
+    }
+    for (int x = 0; x < w; x++) {
+        for (int y = 0; y < h; y++) {
+            MazeNode* node = getNode(x, y);
+            uint8_t walls = node->getWalls();
+            int pat_x = x*2 + 1;
+            int pat_y = y*2 + 1;
+
+            draw_pattern[pat_x][pat_y] = !node->isVisited();
+            //increment, so if either wall is closed it will be drawn closed
+            draw_pattern[pat_x][pat_y-1] += walls & 0x01;
+            draw_pattern[pat_x-1][pat_y-1] += walls & 0x02;
+            draw_pattern[pat_x-1][pat_y] += walls & 0x04;
+            draw_pattern[pat_x-1][pat_y+1] += walls & 0x08;
+            draw_pattern[pat_x][pat_y+1] += walls & 0x10;
+            draw_pattern[pat_x+1][pat_y+1] += walls & 0x20;
+            draw_pattern[pat_x+1][pat_y] += walls & 0x40;
+            draw_pattern[pat_x+1][pat_y-1] += walls & 0x80;
+
+        }
+    }
+    //now dump it into a file
+    FILE* out_file;
+    out_file = fopen(filename, "w");
+    for (int y = 0; y < draw_h; y++) {
+        for (int x = 0; x < draw_w; x++) {
+            if (draw_pattern[x][y] != 0)
+                fprintf(out_file, "1");
+            else
+                fprintf(out_file, "0");
+        }
+        fprintf(out_file, "\n");
+    }
+    fclose(out_file);
+    for (int i = 0; i < draw_w; i++) {
+        delete[] draw_pattern[i];
+    }
+    delete[] draw_pattern;
+}
